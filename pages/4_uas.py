@@ -20,9 +20,9 @@ def moora(matrix, weights, criteria_types):
 
     return scores
 
-# Fungsi untuk menampilkan visualisasi jika dibutuhkan
+# Fungsi untuk menampilkan visualisasi
 def display_visualization(scores):
-    # Contoh visualisasi, bisa disesuaikan sesuai kebutuhan
+    # visualisasi
     scores_df = pd.DataFrame({'Alternatif': [f'Alternatif {i+1}' for i in range(len(scores))],
                               'Score': scores})
     st.bar_chart(scores_df.set_index('Alternatif'))
